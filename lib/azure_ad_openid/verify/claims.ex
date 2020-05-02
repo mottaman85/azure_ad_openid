@@ -73,7 +73,7 @@ defmodule AzureADOpenId.Verify.Claims do
       [
         # tenant/issuer
        #{expected_iss == claims[:iss], "iss"},
-        {expected_tid == claims[:tid], "tid"},
+       #{expected_tid == claims[:tid], "tid"},
 
         # time checks
         {now < claims[:exp], "exp"},
