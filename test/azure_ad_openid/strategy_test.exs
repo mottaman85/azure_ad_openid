@@ -9,6 +9,8 @@ defmodule ClientCredentialsTest do
   test "client credentials" do
     config = Application.get_env(:azure_ad_openid, AzureADOpenId)
 
+
+
     config
     |> ClientCredentials.get_token!()
     |> Verify.Token.access_token!(config)
@@ -18,7 +20,7 @@ defmodule ClientCredentialsTest do
   test "auth code" do
     config = Application.get_env(:azure_ad_openid, AzureADOpenId)
 
-    "http://website/callback"
+    "http://localhost:4000/callback"
     |> AuthCode.authorize_url!(config)
     |> IO.inspect()
   end

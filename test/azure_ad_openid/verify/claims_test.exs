@@ -5,9 +5,9 @@ defmodule VerifyTest do
 
   import Mock
 
-  @code "0123456789abcdef"
-  @client_id "example_client"
-  @tenant "example_tenant"
+  @code "j0Yi=c.DZ0/T-IHh2jo1vaB/8R.Gn2JC"
+  @client_id "e7272297-9121-47bb-af91-c1d49231b727"
+  @tenant "92ea44ce-b541-4db2-876d-9bae5df375cd"
   @nonce "example_nonce"
   @env_values [redirect_uri: "https://example.com", client_id: @client_id, tenant: @tenant]
 

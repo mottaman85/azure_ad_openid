@@ -16,7 +16,7 @@ defmodule AzureADOpenId.Strategy.ClientCredentials do
   end
 
   defp build_client(config) do
-    azure_base_url = "https://login.microsoftonline.com/#{config[:tenant]}/oauth2"
+    azure_base_url = "https://login.microsoftonline.com/common/oauth2"
 
     Client.new(
       strategy: ClientCredentials,
