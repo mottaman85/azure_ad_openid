@@ -24,7 +24,7 @@ defmodule AzureADOpenId.Strategy.AuthCode do
   end
 
   defp build_client(callback_url, config) do
-    azure_base_url = "https://login.microsoftonline.com/#{config[:tenant]}/oauth2"
+    azure_base_url = "https://login.microsoftonline.com/common/oauth2"
 
     Client.new(
       strategy: AuthCode,
